@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(35deg, #112, #134);
+    font-size: clamp(1em, 1vw, 1.2em);
+}
+
+form {
+    margin: 2rem;
+    background: #111;
+    box-shadow: 0 .75rem 2rem #0007;
+    border-radius: 3rem;
+    padding: 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.input {
+    flex-grow: 1;
+    flex-basis: 500;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+form .input label {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+input {
+    background: transparent;
+    border: .15rem solid #888a;
+    padding: .5em 1em;
+    border-radius: 1em;
+    transition: .15s ease-in-out;
+}
+
+input:active, input:focus, input:valid {
+    border-color: #fffa;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .55em;
+    letter-spacing: .05em;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 3em;
+    background: #50f;
+    outline: .2rem solid #50f;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+a:hover {
+    outline-color: #82f;
+    letter-spacing: .15em;
+    text-shadow: 0 0 1em currentColor;
+}
